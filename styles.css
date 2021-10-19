@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@500&display=swap');
+
+:root {
+    --nav-text-color: rgb(192, 31, 85);
+    --main-bg-color: antiquewhite;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--main-bg-color);
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+nav {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    width: 62px;
+    padding: 0 15px;
+}
+
+nav ul {
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--nav-text-color);
+    /* font-weight: 1000; */
+}
+
+nav ul li a:hover {
+    color: rgb(238, 22, 105);
+    font-weight: bolder;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    width: 25vw;
+    height: 27px;
+    border-radius: 7px;
+    margin: 0 4px 0 344px;
+}
+
+.search button {
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+.slider {
+    width: 60vw;
+    margin: 12px auto;
+    overflow: hidden;
+}
+
+.card {
+    max-width: 72vw;
+    margin: 20px auto;
+    border-top: 1px solid black;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+}
+
+.card h2 {
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+.card-items {
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 10vw;
+    margin: 7px;
+}
+
+.container {
+    min-height: calc(100vh - 60px - 12vh);
+}
+
+footer {
+    height: 12vh;
+    background-color: var(--main-bg-color);
+    color: var(--nav-text-color);
+    font-weight: 300;
+    font-family: 'Noto Sans Mono', monospace;
+}
